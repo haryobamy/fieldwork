@@ -6,7 +6,7 @@ export const contactApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     //get contacts
 
-    getContacts: builder.query<PaginatedContactResponse, TPagination>({
+    getContacts: builder.query({
       query: () => ({
         url: 'contacts',
         method: 'GET',
